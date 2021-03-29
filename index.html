@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="css/style_login.css">
+    
+    <title>Login</title>
+</head>
+<body>
+      <div id="formulario_Iniciar_secion" class="login-container">
+          <div class="login-info-container">
+            <h1 class="title">Inicia Sesión</h1>
+            <div class="social-login">
+                <div class="social-login-element">
+                    <img src="images/google.svg" alt="google-image">
+                    <span>Google</span>
+                </div>
+                <div class="social-login-element">
+                    <img src="images/facebook.svg" alt="facebook-image">
+                    <span>Facebook</span>
+                </div>
+            </div>
+            <p>or</p>
+            <form class="inputs-container">
+                <input type="text" id="inicia-email" class="input" placeholder="Email" required>
+                <input type="password" id="inicia-password" class="input" placeholder="Password" required>
+            <!--    <input id="email" class="input" type="text" placeholder="email" required>
+                <input id="password" class="input" type="password" placeholder="Password" required>
+                <p>Forgot password? <span class="span">Click here</span></p>
+                <button type="submit" class="btn">login</button>
+                -->
+                <button type="submit" class="btn btn-primary">Ingresar</button> 
+                <p>¿No tienes una cuenta? <span class="span"><a href="registro.html">Regístrese</a>  </span></p>
+            </form>
+          </div>
+            <img class="image-container" src="images/login.svg" alt="">
+      </div>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-auth.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyD5aAMMZaGPIFhPD8utkenTzvham4XaWKs",
+    authDomain: "educawebunach.firebaseapp.com",
+    projectId: "educawebunach",
+    storageBucket: "educawebunach.appspot.com",
+    messagingSenderId: "527311958853",
+    appId: "1:527311958853:web:b020a64844275394aa042c",
+    measurementId: "G-SP26PSY1JP"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  const auth =firebase.auth();
+  firebase.analytics();
+</script>
+<script src="js/iniciar_usuario.js"></script>
+</body>
+</html>
